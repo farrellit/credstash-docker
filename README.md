@@ -9,5 +9,5 @@ docker run --rm -it -v local-path-to.aws:/root/.aws -e AWS_PROFILE=profile_name 
 
 for example ( from windows), it might look like
 ```
-docker run -it --name credstash --entrypoint=/bin/bash -e AWS_PROFILE=idms_credstash -v C:\Users\MMLocal\.aws:/root/.aws credstash
+docker run -it  -e AWS_PROFILE=idms_credstash -v C:\Users\MMLocal\.aws:/root/.aws credstash
 ```
